@@ -1,0 +1,146 @@
+.startupsBlock {
+    background-color: #fff;
+    width: 1100px;
+    height: auto;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.startupsListPage {
+    width: 1034px;
+    height: 77px;
+    left: 123px;
+    top: 153px;
+    margin: 20px auto 30px 30px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+.filterBtn {
+    margin: 30px;
+}
+.filterBtnPop,
+.filterBtnNew {
+    width: 224px;
+    height: 68px;
+    left: 123px;
+    top: 257px;
+    margin-right: 50px;
+
+    background: #13adb7;
+    border-radius: 35px;
+    border: none;
+}
+
+.filterBtnText {
+    width: 224px;
+    height: 68px;
+    left: 397px;
+    top: 257px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.stertupsList {
+    margin: 20px 30px 20px 30px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stertupsItem {
+    width: 30%;
+    margin-right: 20px;
+}
+.stertupsItemSmallWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.stertupsItemTime {
+    height: 20px;
+    left: 149px;
+    top: 590px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #999ca9;
+}
+.stertupsItemTittle {
+    width: 179px;
+    height: 28px;
+    left: 149px;
+    top: 614px;
+    margin-bottom: 8px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+.stertupsItemDesr {
+    width: 277px;
+    height: 48px;
+    left: 149px;
+    top: 650px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #7b7d8c;
+}
+.stertupsItemBtn {
+    box-sizing: border-box;
+
+    align-items: center;
+    margin-left: 3%;
+    gap: 10px;
+
+    width: 283px;
+    height: 42px;
+    left: 149px;
+    top: 742px;
+
+    background: #ffffff;
+
+    border: 1px solid #13adb7;
+    border-radius: 4px;
+}
+.stertupsItemA {
+    width: 136px;
+    height: 18px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+
+    color: #13adb7;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.stertupsItemBtn:hover {
+    background-color: #ddfdff;
+}
