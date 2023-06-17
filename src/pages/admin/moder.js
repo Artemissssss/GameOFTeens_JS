@@ -49,7 +49,7 @@ function moder(data) {
 }
 
 export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/startups')
+    const res = await fetch('https://game-of-teens-js-xi.vercel.app//api/startups')
     const data = await res.json()
     return {
       props: {
