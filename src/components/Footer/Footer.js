@@ -1,5 +1,9 @@
+import { StatusContext } from '@/context/context';
 import Link from 'next/link';
+import { useContext } from 'react';
+
 const Footer = () => {
+    const { status, setStatus } = useContext(StatusContext);
     return (
         <div className="background">
             <footer className="footerDiv background">
@@ -13,7 +17,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="navButton" href={'/startups'}>
+                            <Link className="navButton" href={'/projects'}>
                                 Проєкти
                             </Link>
                         </li>
@@ -30,6 +34,11 @@ const Footer = () => {
                                 Політика
                             </Link>
                         </li>
+                        {status ? (<li>
+                            <Link className="navButton" href={'/moder'}>
+                                Панель адміністратора
+                            </Link>
+                        </li>) : null}
                     </ul>
                 </div>
                 <div className="contactDiv">
@@ -39,6 +48,7 @@ const Footer = () => {
                     <p>Gmail: artemka7.av@gmail.com</p>
                 </div>
             </footer>
+            <p className='copyrgth'>2023 © GoITeensLab</p>
         </div>
     );
 };
