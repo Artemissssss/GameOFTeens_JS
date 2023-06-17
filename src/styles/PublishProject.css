@@ -97,6 +97,22 @@
     border: 2px solid #000000;
 }
 
+.commentFromText::placeholder,
+.commentFromName::placeholder {
+    width: 950px;
+    height: 170px;
+    left: 154.57px;
+    top: 1195px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #6e6e6e;
+}
+
 .commentFromBtn {
     box-sizing: border-box;
 
