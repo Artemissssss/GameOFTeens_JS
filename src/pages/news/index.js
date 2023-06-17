@@ -2,8 +2,17 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
+function truncateText(text, maxLength) {
+    if (text.length <= maxLength) {
+        return text;
+    } else {
+        return text.substring(0, maxLength) + '...';
+    }
+}
+
 export default function Profile({ data }) {
     const [filterP, setFilter] = useState(true);
+
     return (
         <>
             <Head>
@@ -44,6 +53,11 @@ export default function Profile({ data }) {
                                       return b.likes - a.likes;
                                   })
                                   .map((arr, i) => {
+                                      const truncatedTitle = truncateText(
+                                          arr.projectName,
+                                          20
+                                      );
+
                                       return (
                                           <li className="stertupsItem" key={i}>
                                               <div className="stertupsItemSmallWrap">
@@ -55,7 +69,7 @@ export default function Profile({ data }) {
                                                   </p>
                                               </div>
                                               <h3 className="stertupsItemTittle">
-                                                  {arr.projectName}
+                                                  {truncatedTitle}
                                               </h3>
                                               <p className="stertupsItemDesr">
                                                   {arr.description}
@@ -72,6 +86,11 @@ export default function Profile({ data }) {
                                       );
                                   })
                             : data?.reverse().map((arr, i) => {
+                                  const truncatedTitle = truncateText(
+                                      arr.projectName,
+                                      20
+                                  );
+
                                   return (
                                       <li className="stertupsItem" key={i}>
                                           <div className="stertupsItemSmallWrap">
@@ -83,7 +102,7 @@ export default function Profile({ data }) {
                                               </p>
                                           </div>
                                           <h3 className="stertupsItemTittle">
-                                              {arr.projectName}
+                                              {truncatedTitle}
                                           </h3>
                                           <p className="stertupsItemDesr">
                                               {arr.description}
@@ -105,6 +124,7 @@ export default function Profile({ data }) {
         </>
     );
 }
+
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3000/api/news');
     const data = await res.json();

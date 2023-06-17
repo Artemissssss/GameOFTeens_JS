@@ -64,10 +64,13 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Добавьте эту строку */
 }
 .stertupsItem {
-    width: 30%;
-    margin: auto 20px 20px auto;
+    margin: 0 0 20px 0;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 .stertupsItemSmallWrap {
     display: flex;
@@ -86,7 +89,7 @@
     color: #999ca9;
 }
 .stertupsItemTittle {
-    width: 179px;
+    max-width: 325px;
     height: 28px;
     left: 149px;
     top: 614px;
@@ -98,6 +101,9 @@
     line-height: 140%;
 
     color: #0f111d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .stertupsItemDesr {
     width: 277px;
