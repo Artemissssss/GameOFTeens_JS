@@ -36,8 +36,15 @@
     background: #13adb7;
     border-radius: 35px;
     border: none;
+    color: #ffffff;
 }
-
+.filterBtnPop:hover,
+.filterBtnNew:hover {
+    border-style: solid;
+    border-color: #13adb7;
+    color: #13adb7;
+    background-color: #fff;
+}
 .filterBtnText {
     width: 224px;
     height: 68px;
@@ -50,8 +57,6 @@
     line-height: 31px;
     align-items: center;
     text-align: center;
-
-    color: #ffffff;
 }
 
 .stertupsList {
