@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #dadada;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+
+    text-align: center;
+
+    color: #0f111d;
+}
+h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+i {
+    font-family: 'DM Sans', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+
+strong {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+a {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 140%;
+
+    text-decoration-line: underline;
+
+    color: #0f111d;
+}
+
+.startupsCurName {
+    padding: 50px 0 0 50px;
+    text-align: left;
+}
+
+.startupsCurNameDate {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.contactAuthor,
+.startupContent,
+.supportMoney {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.startupsCurLikes {
+    width: 213px;
+    height: 57px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+    margin: 50px;
+    text-align: left;
+
+    color: #13adb7;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
