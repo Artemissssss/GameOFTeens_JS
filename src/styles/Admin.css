@@ -1,0 +1,138 @@
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminFormBox {
+    background-color: #fff;
+    width: 1100px;
+    padding: 34px;
+    height: auto;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.adminFormImput {
+    box-sizing: border-box;
+
+    width: 1035px;
+    margin: 25px;
+    height: 87px;
+    left: 124px;
+    top: 399px;
+    padding: 40px;
+
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 109px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    color: #6e6e6e;
+}
+
+.adminFormImput::placeholder {
+    width: 950px;
+    height: 170px;
+    left: 154.57px;
+    top: 1195px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #6e6e6e;
+}
+
+.adminFormSubmit {
+    width: 559px;
+    height: 103px;
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 109px;
+    margin-bottom: 120px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #ffffff;
+}
+
+.adminTittle {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adminNav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.adminNavLink {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.adminModerList {
+    list-style: none;
+}
+
+.adminModerItem {
+    width: 100%;
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.adminModerItemLink {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #0F111D;
+    text-decoration: none;
+}
+
+.adminModerAgreeChoi{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adminModerAgree, .adminModerDisagree{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0F111D;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
