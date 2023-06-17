@@ -1,0 +1,75 @@
+.navBackground {
+    background: #000000;
+    height: 91px;
+}
+
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 100px auto 100px;
+    height: 91px;
+    left: 0px;
+    top: 0px;
+}
+
+.navLeft {
+    margin: 31px 100px 27px 100px;
+
+    width: 559px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+
+    color: #f7feff;
+}
+.logoBlue {
+    color: #13adb7;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 314px;
+}
+.navButton {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.createProject {
+    width: 209.06px;
+    margin: 20px 100px 21.46px 100px;
+    height: 49.54px;
+    left: 1150px;
+    top: 20px;
+    border: none;
+    background: #2740c2;
+    border-radius: 45px;
+}
+.createProject a {
+    text-decoration: none;
+    width: 145px;
+    height: 17px;
+    left: 32px;
+    top: 16.54px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #e4e4e4;
+}

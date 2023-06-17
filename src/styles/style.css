@@ -1,0 +1,141 @@
+.image-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-mainPage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.messageTitle {
+    width: 1034px;
+    height: 77px;
+    left: 135px;
+    top: 960px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+
+    color: #0f111d;
+}
+.overlay {
+    margin-top: 91px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-container {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.title-mainpage {
+    width: 848px;
+    height: 125.67px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+    text-align: center;
+    color: #13adb7;
+}
+
+.subtitle-mainpage {
+    margin: 39px auto 39px auto;
+    width: 630px;
+    height: 23.81px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #e9eceb;
+}
+
+.invest-button {
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 230px;
+    height: 50.51px;
+    border: none;
+    background: #13adb7;
+    border-radius: 45px;
+}
+
+.invest-button a {
+    text-decoration: none;
+    width: 145px;
+    height: 17px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 17px;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+.messageBlock {
+    background-color: #fff;
+    width: 1100px;
+    padding: 34px;
+    height: auto;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    width: 693px;
+    height: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 175%;
+    color: #000000;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.flex-message {
+    justify-content: space-between;
+    display: flex;
+    align-items: stretch;
+}
+
+.message-image {
+    margin: 50px;
+}
+
+.second-flex-message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second-flex-message p {
+    width: 40%;
+    margin: 35px;
+}
+.second-flex-message span {
+    color: #13adb7;
+    font-style: italic;
+}
