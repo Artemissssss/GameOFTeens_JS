@@ -3,7 +3,7 @@
     margin-top: 135px;
     margin-bottom: 100px;
     width: 1102px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +43,6 @@
 }
 
 .commentFromName:nth-child(1) {
-
     width: 1026px;
     height: 87px;
 
@@ -54,7 +53,6 @@
 }
 
 .commentFromName:nth-child(2) {
-
     width: 1026px;
     height: 87px;
 
@@ -64,7 +62,6 @@
 }
 
 .commentFromName:nth-child(3) {
-
     width: 1026px;
 
     height: 87px;
@@ -78,13 +75,14 @@
     display: inline-block;
     margin-bottom: 50px;
     width: 1026px;
-    height: 492px;
-}
-.ck-content {
-min-height: 450px;
-margin-bottom: 50px;
+    max-height: 450px;
+    overflow-y: auto;
 }
 
+.ck-content {
+    min-height: 450px;
+    margin-bottom: 50px;
+}
 
 .commentFromText {
     box-sizing: border-box;
