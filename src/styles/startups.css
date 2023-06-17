@@ -37,6 +37,7 @@
     border-radius: 35px;
     border: none;
     color: #ffffff;
+    transition: 0.5s;
 }
 .filterBtnPop:hover,
 .filterBtnNew:hover {
@@ -66,9 +67,8 @@
     flex-wrap: wrap;
 }
 .stertupsItem {
-    margin-bottom: 20px;
-    width: 30%;
-    margin-right: 20px;
+    width: 329px;
+    margin-bottom: 40px;
 }
 .stertupsItemSmallWrap {
     display: flex;
@@ -114,21 +114,15 @@
     color: #7b7d8c;
 }
 .stertupsItemBtn {
-    box-sizing: border-box;
-
     align-items: center;
-    margin-left: 3%;
-    gap: 10px;
-
-    width: 283px;
+    width: 329px;
     height: 42px;
-    left: 149px;
-    top: 742px;
 
     background: #ffffff;
 
     border: 1px solid #13adb7;
     border-radius: 4px;
+    transition: 0.5s;
 }
 .stertupsItemA {
     width: 136px;
@@ -148,5 +142,6 @@
 }
 
 .stertupsItemBtn:hover {
-    background-color: #ddfdff;
+    color: white;
+    background-color: #13adb7;
 }

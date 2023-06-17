@@ -7,7 +7,7 @@ export default function Profile({data}) {
   return (
     <>
     <Head>
-    <title>Проєкти для івестицій</title>
+    <title>Новини</title>
     <meta name="description" content={data.description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all" />
@@ -15,7 +15,7 @@ export default function Profile({data}) {
     </Head>
     <main>
       <section className="postList">
-        <h2 className="startupsListPage">Проєкти для івестицій</h2>
+        <h2 className="startupsListPage">Новини</h2>
         <div className="filterBtn">
             <button className="filterBtnPop" onClick={()=>{setFilter(true)}}>Популярні</button> 
             <button className="filterBtnNew" onClick={()=>{setFilter(false)}}>Нові</button>
@@ -23,7 +23,6 @@ export default function Profile({data}) {
         <ul className="stertupsList">
             {
             filterP ? data?.sort((a,b)=>{return b.likes- a.likes }).map((arr,i)=>{
-                if(arr.status){
                     return(
                         <li className="stertupsItem" key={i}>
                             <div className="stertupsItemSmallWrap">
@@ -32,25 +31,21 @@ export default function Profile({data}) {
                             </div>
                             <h3 className="stertupsItemTittle">{arr.projectName}</h3>
                             <p className="stertupsItemDesr">{arr.description}</p>
-                            <button className="stertupsItemBtn"><Link href={`/startups/${arr._id}`} className="stertupsItemA">Подивитися більше</Link></button>
+                            <button className="stertupsItemBtn"><Link href={`/news/${arr._id}`} className="stertupsItemA">Подивитися більше</Link></button>
+                        </li>
+                    )}
+                ) : data?.reverse().map((arr,i)=>{
+                    return(
+                        <li className="stertupsItem" key={i}>
+                            <div className="stertupsItemSmallWrap">
+                                <p className="stertupsItemTime">{arr.time}</p>
+                                <p className="stertupsItemTime">{arr.likes}❤️</p>
+                            </div>
+                            <h3 className="stertupsItemTittle">{arr.projectName}</h3>
+                            <p className="stertupsItemDesr">{arr.description}</p>
+                            <button className="stertupsItemBtn"><Link href={`/news/${arr._id}`} className="stertupsItemA">Подивитися більше</Link></button>
                         </li>
                     )
-                }
-                }
-                ) : data?.reverse().map((arr,i)=>{
-                    if(arr.status){
-                        return(
-                            <li className="stertupsItem" key={i}>
-                                <div className="stertupsItemSmallWrap">
-                                    <p className="stertupsItemTime">{arr.time}</p>
-                                    <p className="stertupsItemTime">{arr.likes}❤️</p>
-                                </div>
-                                <h3 className="stertupsItemTittle">{arr.projectName}</h3>
-                                <p className="stertupsItemDesr">{arr.description}</p>
-                                <button className="stertupsItemBtn"><Link href={`/startups/${arr._id}`} className="stertupsItemA">Подивитися більше</Link></button>
-                            </li>
-                        );
-                    }
                     })
         }
         </ul>
@@ -60,7 +55,7 @@ export default function Profile({data}) {
   )
 }
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/startups')
+  const res = await fetch('http://localhost:3000/api/news')
   const data = await res.json()
   return {
     props: {

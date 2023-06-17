@@ -8,10 +8,11 @@ function Home() {
                 <div className="overlay"></div>
                 <Image
                     className="background-mainPage"
-                    src="/background-mainPage-photo.png"
+                    src="/img/background-mainPage-photo.png"
                     alt="background"
                     width={'1280'}
                     height={'832'}
+                    priority="true"
                 />
             </div>
             <div className="text-container">
@@ -31,9 +32,10 @@ function Home() {
                     <div className="flex-message">
                         <Image
                             className="message-image"
-                            src={'/rocket.png'}
+                            src={'/img/rocket.png'}
                             width={'280'}
                             height={'280'}
+                            priority="true"
                         />
                         <p className="message">
                             <span className="strong">GoITeensLab</span> -
@@ -51,9 +53,10 @@ function Home() {
                     <div className="flex-message">
                         <Image
                             className="message-image"
-                            src={'/businessman.png'}
+                            src={'/img/businessman.png'}
                             width={'280'}
                             height={'280'}
+                            priority="true"
                         />
                         <p className="message">
                             <span className="strong">Стартап</span> - це молода
@@ -96,4 +99,5 @@ function Home() {
         </>
     );
 }
+
 export default Home;

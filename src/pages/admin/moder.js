@@ -15,12 +15,12 @@ function moder(data) {
      <section className="postList">
         <h2 className="adminTittle">Панель адміністратора</h2>
         <div className="adminNav">
-        <Link href={"/admin/news"}>Новини</Link> 
-        <Link href={"/admin/moder"}>Модерація</Link>
+        <Link className="adminNavLink" href={"/admin/news"}>Новини</Link> 
+        <Link className="adminNavLink" href={"/admin/moder"}>Модерація</Link>
         </div>
         <ul className="adminModerList">
             {
-                data.data.map((arr,i)=>{return (!arr.status? <li key={i} className="adminModerItem"><Link href={`/startups/${arr._id}`}>{arr.projectName}</Link> <div className="adminModerAgreeChoi"><button onClick={
+                data.data.map((arr,i)=>{return (!arr.status? <li key={i} className="adminModerItem"><Link className="adminModerItemLink" href={`/startups/${arr._id}`}>{arr.projectName}</Link> <div className="adminModerAgreeChoi"><button onClick={
                     ()=>{fetch(`/api/startups/${arr._id}`, {
                     method: 'POST',
                     body: JSON.stringify({

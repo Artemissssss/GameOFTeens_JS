@@ -1,9 +1,20 @@
 .background {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background: #000000;
-    padding: 45px 90px 45px 90px;
+    padding: 45px 90px 0 90px;
     color: #fff;
 }
+.footerH2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
 
+    color: #ffffff;
+}
 .footerDiv {
     display: flex;
     justify-content: space-between;
@@ -11,6 +22,7 @@
     left: 0px;
     top: 0px;
 }
+
 .footerDiv ul {
     list-style: none;
 }
@@ -76,5 +88,16 @@
 
     text-align: right;
 
+    color: #e9eceb;
+}
+
+.copyrgth {
+    text-align: center;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
     color: #e9eceb;
 }
