@@ -1,0 +1,127 @@
+.publishTitle {
+    width: 1102px;
+    height: 73px;
+    left: 89px;
+    top: 165px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.publishBlock {
+    background-color: #fff;
+    width: 1100px;
+    padding: 34px;
+    height: auto;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.addArticles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commentFromName {
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.commentFromName:nth-child(1) {
+    box-sizing: border-box;
+
+    width: 1033px;
+    height: 87px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 109px;
+}
+.commentFromName:nth-child(2) {
+    box-sizing: border-box;
+
+    width: 1033px;
+    height: 87px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 109px;
+}
+.commentFromName:nth-child(3) {
+    box-sizing: border-box;
+
+    width: 1033px;
+
+    height: 87px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 109px;
+}
+
+.App {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    width: 1026px;
+    height: 492px;
+    left: 133px;
+    top: 647px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+
+.captcha {
+    margin-bottom: 50px;
+}
+
+.commentFromText {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    padding: 30px;
+    width: 1026px;
+    height: 189px;
+    left: 133px;
+    top: 1176px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+
+.commentFromBtn {
+    box-sizing: border-box;
+
+    width: 559px;
+    height: 103px;
+    left: 366px;
+    top: 1713px;
+
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 109px;
+}
+
+.commentFromBtnText {
+    width: 355px;
+    height: 103px;
+    left: 468px;
+    top: 1713px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
