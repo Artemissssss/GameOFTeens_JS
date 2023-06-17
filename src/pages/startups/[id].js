@@ -14,7 +14,7 @@ function  Id({data}) {
         const item = localStorage.getItem(`likes${data._id}`)
         setFavoriteNumber(item)
       }
-      if(!status){
+      if(!status && !data.status){
         router.push("/")
       }
       },[])
@@ -36,6 +36,8 @@ function  Id({data}) {
         <h2 className="startupsCurName">{data.projectName}</h2>
         <p className="startupsCurNameDate">{`${data.name} ${data.time}`}</p>
         {parse(`${data.content}`)}
+        <h4 className="supportMoney"><span className="moneyBold">Підтримати автора за:</span><br/>{data.payments}</h4>
+        <h4 className="contactAuthor"><span className="moneyBold">Зв’язатися з автором за:</span><br/>{data.socials}</h4>
         <button onClick={()=>{
           if(!favoriteNumber){
             fetch(`/api/startups/${data._id}`, {
