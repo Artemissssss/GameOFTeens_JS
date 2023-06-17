@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 function Home() {
     return (
         <>
@@ -12,7 +9,6 @@ function Home() {
                     alt="background"
                     width={'1280'}
                     height={'832'}
-                    priority="true"
                 />
             </div>
             <div className="text-container">
@@ -35,7 +31,6 @@ function Home() {
                             src={'/rocket.png'}
                             width={'280'}
                             height={'280'}
-                            priority="true"
                         />
                         <p className="message">
                             <span className="strong">GoITeensLab</span> -
@@ -56,7 +51,6 @@ function Home() {
                             src={'/businessman.png'}
                             width={'280'}
                             height={'280'}
-                            priority="true"
                         />
                         <p className="message">
                             <span className="strong">Стартап</span> - це молода
@@ -99,5 +93,4 @@ function Home() {
         </>
     );
 }
-
 export default Home;
