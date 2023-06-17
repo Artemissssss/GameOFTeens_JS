@@ -9,8 +9,8 @@ import '@/styles/globals.css';
 import '@/styles/style.css';
 import '@/styles/Footer.css';
 import '@/styles/404.css';
-import '@/styles/style.css';
-import '@/styles/style.css';
+import '@/styles/startups.css';
+import '@/styles/admin.css';
 
 export default function App({ Component, pageProps }) {
     const [status, setStatus] = useState(false);
