@@ -55,7 +55,7 @@ export default function Profile({data}) {
   )
 }
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/news')
+  const res = await fetch('https://game-of-teens-js-xi.vercel.app//api/news')
   const data = await res.json()
   return {
     props: {
