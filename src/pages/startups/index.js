@@ -80,6 +80,9 @@ export default function Profile({ data }) {
                                 : data?.reverse().map((arr, i) => {
                                       return (
                                           <li className="stertupsItem" key={i}>
+                                              <h3 className="stertupsItemTittle">
+                                                  {arr.projectName}
+                                              </h3>
                                               <div className="stertupsItemSmallWrap">
                                                   <p className="stertupsItemTime">
                                                       {arr.time}
@@ -88,9 +91,6 @@ export default function Profile({ data }) {
                                                       {arr.likes}❤️
                                                   </p>
                                               </div>
-                                              <h3 className="stertupsItemTittle">
-                                                  {arr.projectName}
-                                              </h3>
                                               <p className="stertupsItemDesr">
                                                   {arr.description}
                                               </p>
