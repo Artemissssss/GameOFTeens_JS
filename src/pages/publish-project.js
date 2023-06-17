@@ -66,6 +66,8 @@ function publishProject() {
                             />
                             <div className="App">
                                 <Editor
+                                    wrapperClassName="textarea-large"
+                                    editorClassName="editor-content"
                                     name="articles"
                                     onChange={(data) => {
                                         setData(data);
@@ -111,4 +113,3 @@ function publishProject() {
 }
 
 export default publishProject;
-

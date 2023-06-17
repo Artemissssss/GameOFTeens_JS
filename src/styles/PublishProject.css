@@ -30,7 +30,11 @@
     flex-direction: column;
     align-items: center;
 }
+.textarea-large .editor-content {
+    height: 300px;
+}
 .commentFromName {
+    font-size: 30px;
     padding: 30px;
     margin-bottom: 50px;
 }
@@ -71,7 +75,6 @@
     margin-bottom: 50px;
 
     width: 1026px;
-    height: 492px;
     left: 133px;
     top: 647px;
 
