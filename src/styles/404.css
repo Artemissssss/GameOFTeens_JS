@@ -1,0 +1,28 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.error-content {
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    height: 500px;
+    width: 1500px;
+    padding: 100px;
+}
+
+.error-title {
+    font-size: 120px;
+    color: #13adb7;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.error-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
