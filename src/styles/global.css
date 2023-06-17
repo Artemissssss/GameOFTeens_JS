@@ -114,4 +114,9 @@ a {
     color: #13adb7;
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
+    transition: transform 0.2s;
+}
+
+.startupsCurLikes:active {
+    transform: scale(0.95);
 }
