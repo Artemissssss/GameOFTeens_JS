@@ -66,6 +66,10 @@
     color: #ffffff;
 }
 
+.adminFormSubmit:hover {
+    opacity: 0.6;
+}
+
 .adminTittle {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
