@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 function Home() {
     return (
         <>
@@ -19,7 +22,7 @@ function Home() {
                     Станьте частиною прориву та здійсніть чиюсь мрію.
                 </p>
                 <button className="invest-button">
-                    <Link href={'/projects'}>Інвестувати</Link>
+                    <Link href={'/startups'}>Інвестувати</Link>
                 </button>
             </div>
             <div className="messageBlocks">

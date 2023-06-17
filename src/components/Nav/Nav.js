@@ -16,7 +16,7 @@ const Nav = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="navButton" href={'/projects'}>
+                            <Link className="navButton" href={'/startups'}>
                                 Проєкти
                             </Link>
                         </li>
