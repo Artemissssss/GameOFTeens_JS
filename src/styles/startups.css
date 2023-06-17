@@ -149,3 +149,6 @@
 .stertupsItemBtn:hover {
     background-color: #ddfdff;
 }
+.stertupsItemBtn:hover + .stertupsItemA {
+color: #13adb7;
+}
