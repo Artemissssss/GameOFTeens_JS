@@ -1,0 +1,194 @@
+.background {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    padding: 45px 90px 0 90px;
+    color: #fff;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+    left: 0px;
+    top: 0px;
+}
+
+.footerDiv ul {
+    list-style: none;
+}
+
+.footerBox {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.fotterButtons {
+    height: 100%;
+}
+
+.fotterButtons * {
+    margin-bottom: 30px;
+}
+
+.fotterButtons a {
+    width: 68.08px;
+    height: 21px;
+    left: 97px;
+    top: 3108px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #e9eceb;
+}
+
+.contactDiv {
+    text-align: right;
+}
+
+.contactDiv h2 {
+    left: 960px;
+    top: 3053px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    color: #e9eceb;
+}
+
+.contactDiv p {
+    width: 254.86px;
+    height: 30px;
+    left: 944px;
+    top: 3122px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+
+    text-align: right;
+
+    color: #e9eceb;
+}
+
+.copyrgth {
+    text-align: center;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #E9ECEB;
+}
+
+.footerBoxtittle {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footerDiv {
+    margin: 0 auto;
+    width: 1102px;
+}
+
+.contactDivCon {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: right;
+}
+
+.contactDivName {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #E9ECEB;
+}
+
+@media(max-width: 1200px) {
+    .background {
+        width: 100vw;
+        height: 509px;
+        padding: 16px 25px;
+    }
+
+    .footerDiv {
+        flex-flow: wrap-reverse;
+        height: 430px;
+        flex-wrap: row wrap;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .footerBoxtittle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .contactDiv {
+        width: 100%;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .contactDivName, .contactDivCon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactDivCon{
+        margin: 0 auto;
+    }
+
+    .footerBox{
+        justify-content: center;
+        height: 280px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .fotterButtons{
+        margin-top: 20px;
+        height: 150px;
+        width: 100%;
+    }
+
+    li{
+        margin-top: 0;
+    }
+    .footerBoxtittle{
+        margin-bottom: 10px;
+    }
+    .copyrgth{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+    }
+}
