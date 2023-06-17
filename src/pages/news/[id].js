@@ -14,9 +14,9 @@ function  Id({data}) {
         const item = localStorage.getItem(`likes${data._id}`)
         setFavoriteNumber(item)
       }
-      if(!status){
-        router.push("/")
-      }
+          if(!data){
+              !status ? router.push("/") : null
+          }
       },[])
   const saveToLocalStorage = e => {
     e.preventDefault()
@@ -38,7 +38,7 @@ function  Id({data}) {
         {parse(`${data.content}`)}
         <button onClick={()=>{
           if(!favoriteNumber){
-            fetch(`/api/startups/${data._id}`, {
+            fetch(`/api/news/${data._id}`, {
               method: 'POST',
               body: JSON.stringify({
                   "_id": data._id,
@@ -59,7 +59,7 @@ function  Id({data}) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/startups/${context.params.id}`)
+  const res = await fetch(`http://localhost:3000/api/news/${context.params.id}`)
   const data = await res.json()
   return {
     props: {id:context.params.id,data},

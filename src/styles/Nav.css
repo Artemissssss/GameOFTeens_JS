@@ -1,6 +1,12 @@
 .navBackground {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
     background: #000000;
     height: 91px;
+    z-index: 999;
+    margin-bottom: 44px;
 }
 
 .navDiv {

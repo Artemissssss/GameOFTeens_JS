@@ -13,7 +13,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="navButton" href={'/startups'}>
+                            <Link className="navButton" href={'/projects'}>
                                 Проєкти
                             </Link>
                         </li>
