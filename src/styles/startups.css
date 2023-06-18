@@ -13,7 +13,6 @@
     height: 77px;
     left: 123px;
     top: 153px;
-    margin: 20px auto 30px 30px;
 
     font-style: normal;
     font-weight: 700;
@@ -25,6 +24,7 @@
 
 .filterBtn {
     margin: 30px;
+    margin-left: 0;
 }
 
 .filterBtnPop,
@@ -65,7 +65,7 @@
 }
 
 .stertupsList {
-    margin: 20px 30px 20px 30px;
+    width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -73,11 +73,11 @@
 
 .stertupsItem {
     margin-right: 23px;
-    width: 329px;
+    width: 300px;
     margin-bottom: 40px;
 }
 
-.stertupsItem:nth-last-child(3) {
+.stertupsItem:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -127,13 +127,15 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #7b7d8c;
 }
 
 .stertupsItemBtn {
     align-items: center;
-    width: 329px;
+    width: 300px;
     height: 42px;
 
     background: #13adb7;
@@ -171,6 +173,7 @@
 
 @media(max-width: 1200px) {
     .postList {
+        padding: 0;
         width: 310px;
         flex-wrap: wrap;
     }
