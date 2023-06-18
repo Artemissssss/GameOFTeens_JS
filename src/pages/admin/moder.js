@@ -48,14 +48,13 @@ function moder(data) {
   )
 }
 
-export async function getStaticProps() {
-    const res = await fetch('https://game-of-teens-js-xi.vercel.app/api/startups')
-    const data = await res.json()
-    return {
-      props: {
-        data
-      },
-    };
+export async function getServerSideProps() {
+  const data = await (await fetch('https://game-of-teens-js-xi.vercel.app/api/startups'))?.json()
+  return {
+    props: {
+      data
+    }
   }
+}
 
 export default moder
