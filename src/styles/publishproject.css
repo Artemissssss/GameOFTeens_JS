@@ -5,6 +5,7 @@
     width: 1102px;
     background: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 0 50px;
 }
 
 .publishTitle {
