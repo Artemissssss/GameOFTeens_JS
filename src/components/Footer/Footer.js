@@ -35,7 +35,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         {status ? (<li>
-                            <Link className="navButton" href={'/moder'}>
+                            <Link className="navButton" href={'/admin/moder'}>
                                 Панель адміністратора
                             </Link>
                         </li>) : null}
