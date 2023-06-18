@@ -89,21 +89,16 @@ a {
 }
 
 .startupsCurName {
-    padding: 50px 0 0 50px;
+    padding-top: 20px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
 .startupsCurNameDate {
+    margin-bottom: 30px;
     text-align: left;
-    padding-left: 50px;
 }
 
-.contactAuthor,
-.startupContent,
-.supportMoney {
-    padding-top: 50px;
-    padding-left: 50px;
-}
 
 .startupsCurLikes {
     width: 213px;
@@ -114,13 +109,14 @@ a {
     font-size: 50px;
     line-height: 140%;
     margin: 50px;
+    margin-left: 0;
     text-align: left;
 
     color: #13adb7;
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
 }
-.img{
+.image>img{
     width: 100%;
 }
 iframe{
