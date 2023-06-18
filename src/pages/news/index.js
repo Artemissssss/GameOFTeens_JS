@@ -54,12 +54,11 @@ export default function Profile({data}) {
     </>
   )
 }
-export async function getStaticProps() {
-  const res = await fetch('https://game-of-teens-js-xi.vercel.app/api/news')
-  const data = await res.json()
+export async function getServerSideProps() {
+  const data = await (await fetch('https://game-of-teens-js-xi.vercel.app/api/news'))?.json()
   return {
     props: {
       data
-    },
-  };
+    }
+  }
 }
