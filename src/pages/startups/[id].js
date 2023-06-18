@@ -61,7 +61,7 @@ function  Id({data}) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/startups/${context.params.id}`)
+  const res = await fetch(`https://game-of-teens-js-xi.vercel.app/api/startups/${context.params.id}`)
   const data = await res.json()
   return {
     props: {id:context.params.id,data},
